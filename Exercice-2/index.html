@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercice-2</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
 </head>
+
 <body>
-  
-
-<h1>PARTIE-2 Exercice-2 JS</h1>
-<p>Demander à l'aide d'une boîte de dialogue l'âge d'un utilisateur. S'il a plus de 18 ans, lui afficher Vous êtes majeur, sinon lui afficher Vous êtes mineur.</p>
 
 
-    <script> 
-  
+    <h1>PARTIE-2 Exercice-2 JS</h1>
+    <p>Demander à l'aide d'une boîte de dialogue l'âge d'un utilisateur. S'il a plus de 18 ans, lui afficher Vous êtes
+        majeur, sinon lui afficher Vous êtes mineur.</p>
 
-    let number = +(prompt("Votre âge ?"));
 
-            if (number >= 18) {
-                alert("Vous êtes majeur");
-            }
-                else {
+    <script>
 
-                    alert("Vous êtes mineur");
-            }  
 
-            
+        let number = +(prompt("Votre âge ?"));
+
+        if (isNaN(number) || number < 0 ) { 
+          alert("il faut rentrer un chiffre");
+        }
+        else if (number >= 18) {
+
+           alert("Vous êtes Majeur");
+        } else {
+
+           alert("Vous êtes Mineur");
+        }
+
+
     </script>
 
 
 </body>
+
 </html>

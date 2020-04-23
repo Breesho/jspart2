@@ -22,7 +22,7 @@
     <script> 
   
 
-    let number = prompt("un nombre ?");
+    let number = +(prompt("un nombre ?"));
 
     if (number >= 0 && number < 3) {
         alert("chiffre nul")
@@ -36,7 +36,9 @@
     else if (number == 10) {
         alert("chiffre excellent")
         }
-
+    else if (number > 10) {
+        alert("trop grand")
+        }
 
             
     </script>
